@@ -13,3 +13,7 @@ Lead time: O(log n).
 Initial data: random array of numbers.
 We find the minimum element in the array and put it at the beginning of the array. In the remaining (unsorted) part of the array, we again look for the minimum element, then put it after the previous minimum element. Etc.
 Lead time: O(n^2).
+
+>**recursion sum**
+Initial data: random array of numbers.
+Each recursive call brings us closer to an empty array. This reduces the execution time of the function.

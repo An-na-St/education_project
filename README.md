@@ -17,3 +17,7 @@ Lead time: O(n^2).
 >**recursion sum**
 Initial data: random array of numbers.
 Each recursive call brings us closer to an empty array. This reduces the execution time of the function.
+
+>**arr_length**
+Initial data: random array of numbers.
+The function considers the length of the array by recursion. Method length is not used.

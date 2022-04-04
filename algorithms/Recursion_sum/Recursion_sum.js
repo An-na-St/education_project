@@ -16,10 +16,10 @@ function sum(arr) {
 }
 
 function sum_recursion(arr) {
-  if(arr.length == 0) return 0;
-  return arr[0] + sum(Arr.splice(1));
+  if(arr[0] == null) return 0;
+  return arr[0] + sum_recursion(arr.splice(1));
 }
 
 document.getElementById('name').innerHTML = 'Посчитать сумму с помощью рекурсии';
 document.getElementById('sum').innerHTML = 'Сумма элементов массива [' + Arr + '] =' + sum(Arr);
-document.getElementById('sum_recursion').innerHTML = 'Сумма элементов массива посчитанная рекурсией [' + Arr + '] =' + sum_recursion(Arr);
+document.getElementById('sum_recursion').innerHTML = 'Сумма элементов массива [' + Arr + '] посчитанная рекурсией = ' + sum_recursion(Arr);

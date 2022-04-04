@@ -21,3 +21,7 @@ Each recursive call brings us closer to an empty array. This reduces the executi
 >**arr_length**
 Initial data: random array of numbers.
 The function considers the length of the array by recursion. Method length is not used.
+
+>**max_element**
+Initial data: random array of numbers.
+The max_element function in an array finds the maximum element using recursion.

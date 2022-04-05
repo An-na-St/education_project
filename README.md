@@ -25,3 +25,10 @@ The function considers the length of the array by recursion. Method length is no
 >**max_element**
 Initial data: random array of numbers.
 The max_element function in an array finds the maximum element using recursion.
+
+>**quicksort**
+Initial data: random array of numbers.
+We select the **pivot value**, then we check the entire remaining array relative to it. If the value is less than the pivot value, we write it to the **less** array, if it is greater, then we write it to the **greater** array. 
+Then we call the **quicksort** function recursively for the **less** and **greater** arrays, after which we add **less**, **pivot value** and **greater** to the original array using the push method. Returns the already sorted source array.
+Lead time: O(n^2).
+Average performance: O(n logn)

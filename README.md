@@ -32,3 +32,7 @@ We select the **pivot value**, then we check the entire remaining array relative
 Then we call the **quicksort** function recursively for the **less** and **greater** arrays, after which we add **less**, **pivot value** and **greater** to the original array using the push method. Returns the already sorted source array.
 Lead time: O(n^2).
 Average performance: O(n logn)
+
+>**field_splitting**
+Initial data: two sides of the field.
+If the field exists, then the **field_splitting** function recursively checks whether the considered part of the field can be divided into squares without a remainder, with a side equal to the smaller side of the considered part of the field.

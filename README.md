@@ -36,3 +36,7 @@ Average performance: O(n logn)
 >**field_splitting**
 Initial data: two sides of the field.
 If the field exists, then the **field_splitting** function recursively checks whether the considered part of the field can be divided into squares without a remainder, with a side equal to the smaller side of the considered part of the field.
+
+>**BFS**
+Initial data: empty queue, list of friends in the form of a graph-object.
+We are looking for a mango merchant among friends. First, add your closest friends to the queue. The **BFS** function then checks each friend in the queue. If a friend does not trade mangoes, then we add his friends to the queue for verification. If the friend is a mango merchant, then we end the algorithm.

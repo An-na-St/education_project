@@ -1,5 +1,5 @@
 # education_project
-This is a collection of my work for learning.
+:book: This is a collection of my work for learning.
 
 ## algorithms
 ---

@@ -39,4 +39,4 @@ If the field exists, then the **field_splitting** function recursively checks wh
 
 >**BFS**
 Initial data: empty queue, list of friends in the form of a graph-object.
-We are looking for a mango merchant among friends. First, add your closest friends to the queue. The **BFS** function then checks each friend in the queue. If a friend does not trade mangoes, then we add his friends to the queue for verification. If the friend is a mango merchant, then we end the algorithm.
+We are looking for a mango merchant among friends. First, add your closest friends to the queue. The **BFS** function then checks each friend in the queue. If a friend does not trade mangoes, then we add his friends to the queue for verification. If the friend is a mango merchant, then we end the algorithm. Verified friends are not verified again.

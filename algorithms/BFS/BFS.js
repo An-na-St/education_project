@@ -4,7 +4,7 @@ var graph = {
 
   bob: ['anuj', 'peggy'],
   alice: ['peggy'],
-  claire: ['thom', 'jonny'],
+  claire: ['thom', 'jonny', 'peggy'],
 
   anuj: [],
   peggy: [],
@@ -25,14 +25,20 @@ function its_merchant(friend) {
 
 function BFS(queue, graph) {
   var guess;
+  var verified = [];
 
   while(queue.length != 0) {
     guess = queue.shift();
-  
-    if(its_merchant(guess)) {
-      document.getElementById('result').innerHTML = 'Среди ваших друзей ' + guess + ' торгует манго';
-      return;
-    } else enqueue(graph[guess]);
+
+    if(verified.find(element => element == guess) == undefined) {
+      if(its_merchant(guess)) {
+        document.getElementById('result').innerHTML = 'Среди ваших друзей ' + guess + ' торгует манго';
+        return;
+      } else {
+        enqueue(graph[guess]);
+        verified.push(guess);
+      }
+    }
   }
   document.getElementById('result').innerHTML = 'Среди ваших друзей никто не торгует манго';
 }

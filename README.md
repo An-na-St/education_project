@@ -1,4 +1,4 @@
-# education_project
+# education_project_JS
 :book: This is a collection of my work for learning.
 
 ## algorithms
